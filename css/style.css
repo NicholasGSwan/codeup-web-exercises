@@ -68,3 +68,15 @@ a:visited {
     top: 10px;
     right: 10px;
 }
+
+div#watchingyou:hover {
+    background-image: url(../img/madkittycat.jpg);
+    background-position: center;
+    color: #fff;
+    font-weight: bold;
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
