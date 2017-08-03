@@ -1,4 +1,62 @@
-.fancy-header {
-    color: purple;
+h1,
+h2 {
+    color: darkslategray;
     text-decoration: underline;
+}
+
+header>h1{
+    text-align: center;
+}
+
+body {
+    font-family: "Montserrat", "sans-serif";
+    background-image: url("../img/veridianlogo.jpg");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: lightseagreen;
+
+}
+ul {
+    list-style: circle;
+}
+
+table{
+    position:  center;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    font-size: 115%;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+td {
+    font-size: 80%;
+    padding: 3px;
+}
+
+#product {
+    text-align: center;
+}
+
+a:link {
+    color: darkslategray;
+}
+
+a:hover {
+    color: slategray;
+}
+
+a:active {
+    color: seagreen;
+}
+
+a:visited {
+    color: grey;
 }
