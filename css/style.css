@@ -4,16 +4,12 @@ h2 {
     text-decoration: underline;
 }
 
-header>h1{
+header{
     text-align: center;
 }
 
 body {
     font-family: "Montserrat", "sans-serif";
-    background-image: url("../img/veridianlogo.jpg");
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: top right;
     background-color: lightseagreen;
 
 }
@@ -59,4 +55,16 @@ a:active {
 
 a:visited {
     color: grey;
+}
+
+#watchingyou {
+    background-image: url(../img/kittycat.jpg);
+    background-position: center;
+    color: #fff;
+    font-weight: bold;
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
