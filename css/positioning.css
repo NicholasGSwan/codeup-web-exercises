@@ -1,11 +1,25 @@
+h1 {
+    margin-bottom: 50px
+}
 .box{
     border: solid 1px black;
-    width: 150px;
+    width: 50px;
     height: 50px;
     padding: 10px;
+    font-size: 98%;
     font-weight: bold;
     color: white;
-    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    float: left;
+}
+:nth-child(3n+2){
+    clear: left;
+}
+.arrow {
+    position: relative;
+    bottom: 85px;
+    left: 40px;
 
 }
 
@@ -16,26 +30,32 @@
 
 #orange{
     background-color: orange;
-    margin-left: 30px
+
 }
 
 #yellow{
     background-color: yellow;
-    margin-left: 60px
+
 }
 
 #green{
     background-color: forestgreen;
-    margin-left: 90px
+
 }
 
 #blue{
     background-color: blue;
-    margin-left: 120px
+
 }
 
 #violet{
     background-color: violet;
-    margin-left: 150px
+
+}
+
+#ribbon{
+    position: fixed;
+    top: 0px;
+    right: 0px;
 }
 
