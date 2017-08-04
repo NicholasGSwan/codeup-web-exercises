@@ -12,14 +12,15 @@ h1 {
     margin-right: 50px;
     margin-bottom: 50px;
     float: left;
+    position: relative;
 }
-:nth-child(3n+2){
+.box:nth-child(3n+2){
     clear: left;
 }
 .arrow {
-    position: relative;
-    bottom: 85px;
-    left: 40px;
+    position: absolute;
+    bottom: 55px;
+    left: 50px;
 
 }
 
