@@ -1,4 +1,6 @@
-
+* {
+    border: solid 1px red;
+}
 
 html,
 body {
@@ -28,8 +30,11 @@ body {
     box-sizing: border-box;
     float: left;
     padding: 10px;
-    border: solid 1px black;
-    background-color: violet;
+    /*border: solid 1px black;*/
+    /*background-color: violet;*/
+}
+.column.one-sixth {
+    width: 16%
 }
 
 .column.one-half {
@@ -45,5 +50,20 @@ body {
 }
 
 .column.one-eighth {
-    width: 12.5%
+    width: 12.5%;
+}
+
+.column.two-thirds {
+    width: 66%;
+}
+
+@media screen and (max-width: 768px) {
+    .column.one-sixth,
+    .column.one-half,
+    .column.one-third,
+    .column.one-quarter,
+    .column.one-eighth,
+    .column.two-thirds {
+        width: 100%
+    }
 }
