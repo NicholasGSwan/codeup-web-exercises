@@ -14,7 +14,7 @@ body{
     }
     .hidden-on-mobile{
         background-color: #CCFFFF;
-        width: 339px;
+        width: 100%px;
         height: 30px;
         border: 2px solid #ccc;
         /*margin-top: 12px;*/
@@ -41,7 +41,7 @@ body{
         padding:0;
     }
     .nav-links li{
-        width: 339px;
+        width: 100%;
         list-style-type: none;
         line-height: 18px;
         padding: 15px 100px;
@@ -55,8 +55,7 @@ body{
         background-color: #ccc;
     }
     .header-img>img{
-        width: 339px;
-        height: 224px;
+        width: 100%;
         display: block;
         margin: auto;
     }
@@ -64,7 +63,7 @@ body{
 
 /* for desktop screen */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
     body{
 
     }
@@ -106,8 +105,7 @@ body{
         /*margin:  auto;*/
     }
     .header-img>img{
-        width: 890px;
-        height: 385px;
+        width: 100%;
         clear: both;
         display: block;
         margin: auto;
