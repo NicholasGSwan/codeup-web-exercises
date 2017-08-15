@@ -2,7 +2,7 @@
 
 // Don't change the next two lines!
 // This creates two variables:
-//     one with the colors of the rainbow, and another with a single randome
+//     one with the colors of the rainbow, and another with a single random
 //     another with a single random color value
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var color = colors[Math.floor(Math.random()*colors.length)];
