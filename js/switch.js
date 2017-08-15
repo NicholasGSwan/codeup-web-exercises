@@ -55,7 +55,7 @@ switch (shopperName){
 
 console.log(shopperName + "'s subtotal is $" + itemsSubTotal);
 
-if (itemsSubTotal >= 200){
+if (itemsSubTotal > 200){
     var itemsGrandTotal = itemsSubTotal-(itemsSubTotal*.1);
     console.log(shopperName + "'s total after discount is $" + itemsGrandTotal);
 }else{
@@ -112,15 +112,18 @@ if (pickANumber === true) {
 }
 // prompt always returns a string!  if you need to use the number returned in a prompt
 // you need to parse it as an integer.
-if (isNaN(numberPicked)){
-    alert("That's not a number, boy-o")
-}else {
 
+if (isNaN(numberPicked)){
+    alert("That's not a number, boy-o");
+
+}else {
     var numberEven = (numberPicked % 2 === 0) ? alert(numberPicked + " is even!") : alert(numberPicked + " is odd!");
 
     var numberPlusOneHundred = 100 + parseInt(numberPicked);
     alert(numberPicked + " plus 100 equals " + numberPlusOneHundred);
-    var numberIsPositive = (parseInt(numberPicked) >= 0) ? alert("You picked a positive number!") : alert("you picked a negative number!");
+    var numberIsPositive = (parseInt(numberPicked) >= 0) ? "You picked a positive number!" : "you picked a negative number!";
+    alert(numberIsPositive);
+    console.log(numberIsPositive);
 }
 
 
