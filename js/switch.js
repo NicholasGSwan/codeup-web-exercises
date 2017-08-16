@@ -36,8 +36,8 @@ switch(color) {
     // TODO: create a default case that will catch indigo and violet
     // TODO: for the default case, log: I do not know anything by that color.
 
-var shopperNames = ['Cameron', 'Ryan', 'George', 'James'];
-var shopperSubtotals = [180, 240, 320, 450];
+var shopperNames = ['Cameron', 'Ryan', 'George'];
+var shopperSubtotals = [180, 250, 320];
 for (var shopperChoice = 0; shopperChoice < shopperNames.length; shopperChoice++) {
     var shopperName = shopperNames[shopperChoice];
     var itemsSubTotal = shopperSubtotals[shopperChoice];
