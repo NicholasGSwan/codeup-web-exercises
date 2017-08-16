@@ -16,6 +16,7 @@ while (isNaN(userNumber) || userNumber > 10 || userNumber < 1){
         console.log("A good value has been given.")
     }
     userNumber = Number(userNumber);
+    // num = parseInt(userNumber);
     console.log("The number chosen is " + userNumber);
 }
 
@@ -29,3 +30,29 @@ for (var numberOfRandom = 0; numberOfRandom < 10; numberOfRandom++){
     var oddOrEven = (randomNumbers % 2 === 0) ? "even" : "odd";
     console.log(randomNumbers + " is " + oddOrEven);
 }
+
+for (var i = 0; i <= 10; i++){
+    // console.log(i);
+    var str = '';
+
+    for (var j = 0; i > j; j++ ){
+
+        str += i;
+        if (i === 10){
+
+            str = str.replace(/1/g , "");
+
+        }
+
+
+    }
+    console.log(str)
+}
+
+
+
+
+for (var downByFive = 100; downByFive > 0; downByFive -= 5){
+    console.log(downByFive)
+}
+
