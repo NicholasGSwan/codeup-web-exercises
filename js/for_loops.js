@@ -31,7 +31,7 @@ for (var numberOfRandom = 0; numberOfRandom < 10; numberOfRandom++){
     console.log(randomNumbers + " is " + oddOrEven);
 }
 
-for (var i = 0; i <= 10; i++){
+for (var i = 1; i <= 10; i++){
     // console.log(i);
     var str = '';
 
@@ -40,13 +40,20 @@ for (var i = 0; i <= 10; i++){
         str += i;
         if (i === 10){
 
-            str = str.replace(/1/g , "");
+            str = str.replace("1" , "");
 
         }
 
 
     }
     console.log(str)
+}
+for (var i = 1; i <= 10; i++){
+    var str2 = i.toString().repeat(i);
+    if (i>=9){
+       str2 = str2.replace(/1/g , "")
+    }
+ console.log(str2)
 }
 
 
