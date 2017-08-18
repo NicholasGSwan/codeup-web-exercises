@@ -2,3 +2,5 @@
 *.iml
 coding_challenge_friday.html
 js/codingchallenge1.js
+.DS_Store
+img/.DS_Store
