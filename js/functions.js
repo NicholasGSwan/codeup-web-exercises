@@ -31,7 +31,8 @@ var random = Math.floor((Math.random() * 100) + 1);
 function isOdd(number){
     return number % 2 == 1 ? number + " is odd.": number + " is not odd";
 }
-console.log(random)
+console.log(isOdd(random));
+console.log(random);
 /**
  * TODO:
  * Create a function called 'isOdd' that takes a number as a parameter.
