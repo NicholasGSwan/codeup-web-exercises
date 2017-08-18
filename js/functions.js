@@ -28,6 +28,10 @@ console.log(helloMessage)
 // 100 and stores it in a variable named random
 var random = Math.floor((Math.random() * 100) + 1);
 
+function isOdd(number){
+    return number % 2 == 1 ? number + " is odd.": number + " is not odd";
+}
+console.log(random)
 /**
  * TODO:
  * Create a function called 'isOdd' that takes a number as a parameter.
@@ -41,7 +45,9 @@ var random = Math.floor((Math.random() * 100) + 1);
  * Call the function 'isOdd' passing the variable 'random' as a parameter.
  * console.log *outside of the function* to check your work
  */
-
+function calculateTip (percent, total){
+    return percent*total
+}
 /**
  * TODO: Create a function named 'calculateTip' to calculate a tip on a bill at a
  * restaurant
@@ -52,6 +58,12 @@ var random = Math.floor((Math.random() * 100) + 1);
  * Example
  *  > calculateTip(0.20, 20) // returns 4
  */
+var total = prompt("What is the total of your bill?");
+var tipPercent = prompt("What percent would you like to tip?");
+total = parseInt(total);
+tipPercent = parseInt(tipPercent);
+tipPercent /= 100;
+alert("You should leave your waiter " + calculateTip(tipPercent, total) + " dollars.");
 
 /**
  * TODO: use prompt and alert in combination with your calculateTip function to
