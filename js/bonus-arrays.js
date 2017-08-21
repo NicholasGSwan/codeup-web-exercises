@@ -16,3 +16,35 @@ var didItWork = findIndexWhereSumIs9(findNine);
 var didItWorkTheSecondTime = findIndexWhereSumIs9(doesNotAddUpToNine);
 console.log(didItWork);
 console.log(didItWorkTheSecondTime);
+
+function sumEmUp(array){
+
+    for (var i = 0 ; i < array.length; i++){
+        var innerArrayTotal = 0;
+        for(var j= 0; j< array[i].length; j++){
+            innerArrayTotal += array[i][j]
+        }
+        array[i] = innerArrayTotal
+    }
+    return array
+}
+
+var testArray = [[1], [1, 2, 3], [5, 5, 5], [1, 1, 1, 1, 1]];
+var secondTestArray = [[2, 5, 7], [20], [9, 2, 5, 1], [30, 17, 9, 3, 7]];
+
+function twelveToTwentyFour(stuff){
+    // if (stuff.indexOf("p")>=0){
+    //     var stringVar = stuff -= "pm";
+    //     var stringArray = stringVar.split(":");
+    //     stringArray[0] = parseInt(stringArray[0]) + 12;
+    //     stringVar = stringArray.join(":")
+    // }else {
+    //     stringVar = stuff - "am";
+    // }
+    console.log(stringVar);
+    return stringVar;
+}
+
+var stupidString = "12:30";
+var stupidArray = stupidString.split(":");
+console.log(stupidArray)
