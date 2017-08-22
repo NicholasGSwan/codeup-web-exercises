@@ -32,19 +32,21 @@ function sumEmUp(array){
 var testArray = [[1], [1, 2, 3], [5, 5, 5], [1, 1, 1, 1, 1]];
 var secondTestArray = [[2, 5, 7], [20], [9, 2, 5, 1], [30, 17, 9, 3, 7]];
 
-function twelveToTwentyFour(stuff){
-    // if (stuff.indexOf("p")>=0){
-    //     var stringVar = stuff -= "pm";
-    //     var stringArray = stringVar.split(":");
-    //     stringArray[0] = parseInt(stringArray[0]) + 12;
-    //     stringVar = stringArray.join(":")
-    // }else {
-    //     stringVar = stuff - "am";
-    // }
-    console.log(stringVar);
-    return stringVar;
+function twelveToTwentyFour(string){
+    if (string.indexOf("p")>=0){
+        string = string.substring(0, string.indexOf("p"));
+        var stringArray = string.split(":");
+        console.log(stringArray)
+        stringArray[0] = parseInt(stringArray[0]) + 12;
+        console.log(stringArray);
+        string = stringArray.join(":");
+    }else {
+        string = string.substring(string.indexOf("p"), string.indexOf("m"));
+    }
+    console.log(string);
+    return string;
 }
 
-var stupidString = "12:30";
+var stupidString = "12:30pm";
 var stupidArray = stupidString.split(":");
 console.log(stupidArray)
