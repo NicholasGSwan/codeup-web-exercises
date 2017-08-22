@@ -6,5 +6,76 @@
 </head>
 <body>
 <script src="js/objects.js"></script>
+<script>
+    "use strict";
+
+// todo:
+// Create an array of objects that represent books.
+// Each book should have a title and an author property.
+// The author property should be an object with a firstName and lastName.
+// Be creative and add at least 5 books to the array
+// var books = [todo];
+    var books = [
+        {
+            title: "Of Mice and Men",
+            author: {
+                firstName: "John",
+                lastName: "Steinbeck"
+            },
+            yearPublished: "1937",
+            characters: ["Lennie Small", "George Milton", "Curley", "Curley's Wife", "Crooks"]
+        },
+        {
+            title: "Hitchhiker's Guide to the Galaxy",
+            author: {
+                firstName: "Douglas",
+                lastName: "Adams"
+            },
+            yearPublished: "1981",
+            characters: ["Arthur Den", "Ford Prefect", "Zaphod Beeblebrox", "Trillian", "Marvin"]
+        },
+        {
+            title: "The Vampire Lestat",
+            author: {
+                firstName: "Anne",
+                lastName: "Rice"
+            },
+            yearPublished: "1985",
+            characters: ["Lestat De Lioncourt", "Gabrielle de Lioncourt", "Nicolas de Lenfent", "Armand", "Marius"]
+        },
+        {
+            title: "Storm Front",
+            author: {
+                firstName: "Jim",
+                lastName: "Butcher"
+            },
+            yearPublished: "2000",
+            characters: ["Harry Dresden", "Karrin Murphy", "Warden Morgan", "Johnny Marcone", "Victor Sells"]
+        },
+        {
+            title: "Rendezvous with Rama",
+            author: {
+                firstName: "Arthur C.",
+                lastName: "Clarke"
+            },
+            yearPublished: "1973",
+            characters: ["Bill Norton", "Jimmy Pak", "Laura Ernst", "Carlisle Perera"]
+        }
+    ];
+
+// log out the books array
+console.log(books);
+
+// todo:
+// Loop through the array of books using .forEach and print out the specified information about each one.
+// start loop here
+    books.forEach(function (book){
+        console.log("Book #" + (books.indexOf(book)+1) );
+        console.log("Title: " + book.title);
+        console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+        console.log("---");
+    })
+
+// end loop here</script>
 </body>
 </html>
