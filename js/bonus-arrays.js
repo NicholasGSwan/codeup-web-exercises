@@ -41,7 +41,7 @@ function twelveToTwentyFour(string){
         console.log(stringArray);
         string = stringArray.join(":");
     }else {
-        string = string.substring(string.indexOf("p"), string.indexOf("m"));
+        string = string.substring(0, string.indexOf("a"));
     }
     console.log(string);
     return string;
