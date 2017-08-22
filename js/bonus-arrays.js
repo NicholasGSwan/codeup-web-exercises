@@ -36,12 +36,20 @@ function twelveToTwentyFour(string){
     if (string.indexOf("p")>=0){
         string = string.substring(0, string.indexOf("p"));
         var stringArray = string.split(":");
-        console.log(stringArray)
-        stringArray[0] = parseInt(stringArray[0]) + 12;
+        if (stringArray[0] == 12) {
+            /** do nothing **/
+        }else{
+            stringArray[0] = parseInt(stringArray[0]) + 12;
+        }
         console.log(stringArray);
         string = stringArray.join(":");
     }else {
         string = string.substring(0, string.indexOf("a"));
+        stringArray = string.split(":");
+        if (stringArray[0] == 12){
+            stringArray[0] = parseInt(stringArray[0]) - 12
+            string = stringArray.join(":")
+        }
     }
     console.log(string);
     return string;
@@ -49,4 +57,27 @@ function twelveToTwentyFour(string){
 
 var stupidString = "12:30pm";
 var stupidArray = stupidString.split(":");
-console.log(stupidArray)
+console.log(stupidArray);
+
+
+function twentyFourToTwelve(stringTwo){
+    var stringTwoArray = stringTwo.split(":");
+    if (stringTwoArray[0] < 12 && stringTwoArray[0] > 0){
+        stringTwo = stringTwoArray.join(":");
+        stringTwo = stringTwo + "am";
+    }else if (stringTwoArray[0] > 12){
+        stringTwoArray[0] = parseInt(stringTwoArray[0]) - 12;
+        stringTwo = stringTwoArray.join(":");
+        stringTwo = stringTwo + "pm";
+    }else if (stringTwoArray[0] == 12){
+        stringTwo = stringTwoArray.join(":");
+        stringTwo = stringTwo + "pm";
+    }else {
+        stringTwoArray[0] = parseInt(stringTwoArray[0]) + 12;
+        stringTwo = stringTwoArray.join(":");
+        stringTwo = stringTwo + "am";
+    }
+    console.log(stringTwo)
+    return stringTwo
+
+}
