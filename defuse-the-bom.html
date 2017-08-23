@@ -14,19 +14,21 @@
     "use strict";
 
     var detonationTimer = 5;
-    var interval = 1000
+    var interval = 1000;
 
     // TODO: This function needs to be called once every second
     function updateTimer() {
         if (detonationTimer == 0) {
             alert('EXTERMINATE!');
             document.body.innerHTML = '';
+            clearInterval(defuseCode);
         } else if (detonationTimer > 0) {
             document.getElementById('timer').innerHTML = detonationTimer;
         }
-
+        console.log(detonationTimer);
         detonationTimer--;
     }
+
     var defuseCode = setInterval(updateTimer, interval);
     // TODO: When this function runs, it needs to
     // cancel the interval/timeout for updateTimer()
