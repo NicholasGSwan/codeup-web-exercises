@@ -1,7 +1,7 @@
 (function(){
     "use strict";
     var mapOptions = {
-        zoom: 19,
+        zoom: 18,
         center: {
             lat: 29.55423,
             lng: -98.536153
@@ -29,7 +29,7 @@
         map: map
     });
     var infowindow = new google.maps.InfoWindow({
-        content: "Yummy Vietnamese food! Their Vermicelli bowls are great! <a href=\"https://www.facebook.com/Pho-VN-Bistro-1644777712433182/\">Visit their facebook page for more info!</a>"
+        content: "Pho VN Bistro. <br>  Yummy Vietnamese food! Their Vermicelli bowls are great!<br><a href=\"https://www.facebook.com/Pho-VN-Bistro-1644777712433182/\">Visit their facebook page for more info!</a>"
     });
     infowindow.open(map, marker)
 
