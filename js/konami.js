@@ -12,8 +12,9 @@
       string += event.keyCode;
 
       console.log(string);
-        if(string.indexOf("3838404037393739666513") > -1){
+        if(string == konamiCodeString){
           alert("konami code was entered");
+
             string = ""
         }else if(string != konamiCodeString.substr(0, string.length)){
             string = ""
