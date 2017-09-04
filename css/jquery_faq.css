@@ -1,0 +1,6 @@
+.invisible{
+    display: none;
+}
+.highlighted{
+    background-color: yellow;
+}
