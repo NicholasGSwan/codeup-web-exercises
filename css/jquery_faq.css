@@ -4,3 +4,9 @@
 .highlighted{
     background-color: yellow;
 }
+.bolded{
+    font-weight: bold;
+}
+.blueFont{
+    color: blue;
+}
