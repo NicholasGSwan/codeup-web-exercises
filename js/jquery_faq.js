@@ -18,7 +18,7 @@
             })
         });
         $("h3").click(function(){
-            $(this).parent().children("li").toggleClass("bolded")
+            $(this).next().children("li").toggleClass("bolded")
 
         });
         $("li").click(function(){
