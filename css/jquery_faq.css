@@ -10,3 +10,47 @@
 .blueFont{
     color: blue;
 }
+.column{
+    width: 30%;
+    margin: 1.5%;
+    float: left;
+}
+.picture,
+.row,
+.column{
+    box-sizing:border-box;
+}
+.row:before,
+.row:after{
+    clear:both;
+}
+#frame-1{
+    background-image: url("../img/frame-1.jpg")
+}
+#frame-2{
+    background-image: url("../img/frame-2.jpg")
+}
+#frame-3{
+    background-image: url("../img/frame-3.jpg");
+    clear: right
+}
+.frame{
+    position: relative;
+    height: 300px;
+    /*float: left;*/
+}
+.button-container{
+    text-align: center;
+}
+.picture{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+footer{
+    clear: left;
+    width: 100%;
+}
