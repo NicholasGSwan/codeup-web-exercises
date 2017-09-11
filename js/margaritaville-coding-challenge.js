@@ -1,7 +1,7 @@
 "use strict";
 //number 1
 function findTheSign(a, b, c){
-    var whatSign = a * b * c
+    var whatSign = a * b * c;
     if (whatSign < 0){
         return "-"
     }else {
@@ -57,7 +57,7 @@ function convertTheDegrees(number){
     return number
 }
 
-
+ "5" / "5"
 // number 4
 
 function isOneFifty (a, b){
@@ -70,7 +70,7 @@ function isOneFifty (a, b){
 
 // number 5
 function addingPy(string){
-    if (string.substring(0,2) === "Py"){
+    if (string.substring(0,2).toLowerCase() === "py"){
         return string;
     }else {
         string = string.toLowerCase();
