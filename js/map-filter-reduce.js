@@ -50,9 +50,8 @@
 
 
 
-    let usersObject = usersOtherObject.reduce((userOb, userId)=>{
-        userOb[userId] = users[userId];
-
+    let usersObject = users.reduce((userOb, userId)=>{
+        userOb[userId.id] = userId;
         return userOb
     }, {});
     console.log(usersObject)
