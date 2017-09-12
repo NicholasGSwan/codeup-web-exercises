@@ -16,7 +16,7 @@
     wait("poop").catch(()=>console.log("this should appear first"));
 
     function getUserCommitDate(username){
-        return fetch(`https://api.github.com/users/${username}/events`, {headers: {'Authorization': 'token 089d52a54ff138874ce239ce40f54fb0538a1932'}})
+        return fetch(`https://api.github.com/users/${username}/events`)
             .then((response) => response.json())
             .then((user)=> user[0].created_at)
             .then((date)=> console.log(`${username}'s last commit was at ${date}`))
